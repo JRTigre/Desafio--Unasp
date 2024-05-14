@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body{
+    height: 1650px;
+    
+}
+
+/* começa o cabeçalho*/
+header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 75px;
+    background:rgba(254,182,69,1) ;
+}
+.title{
+    display: inline;
+    width: 100%;
+    align-items: center;
+
+}
+h1{
+    margin-top: 15px;
+    margin-left: 70px;
+    font-size: 25px;
+
+}
+h2{
+   
+    margin-left: 70px;
+    font-size: 15px;
+}
+
+/*aqui termina o cabeçalho*/
+
+
+.box_product{
+    display: flex;
+    
+}
+
+.itens{
+    display: inline-block;
+    width: 335px;
+    height: 145px;
+    margin-top:85px ;
+    
+}
+
+
+footer{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background:rgba(254,182,69,1) ;
+  margin-top: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*img{
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    
+}
+
+.pefil{
+    background: rgba(254,182,69,1);
+    border-radius: 15px 0 15px 0;
+    height: 120px;
+    margin-top: 15px;
+}
+
+.name{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 50px;
+
+}
+.descri{
+    text-align: center;
+    margin-top: 5px;
+    padding: 3px;
+}
+.price{
+    margin-top:4px;
+    margin-left: 80px;
+}*/
