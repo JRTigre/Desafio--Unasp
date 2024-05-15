@@ -13,6 +13,7 @@ body{
 
 /* começa o cabeçalho*/
 header{
+    
     position: fixed;
     display: flex;
     width: 100%;
@@ -20,13 +21,21 @@ header{
     background:rgba(254,182,69,1) ;
 }
 .title{
+
     display: inline;
     width: 100%;
     align-items: center;
 
 }
+
+i img{
+    width: 25px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 15px;
+}
 h1{
-    margin-top: 15px;
+    margin-top:8px;
     margin-left: 70px;
     font-size: 25px;
 
@@ -37,9 +46,55 @@ h2{
     font-size: 15px;
 }
 
-/*aqui termina o cabeçalho*/
+
+/*Aqui termina o cabeçalho*/
+
+/* Aqui começa a barra de navegação*/
 
 
+   
+ 
+  .menu{
+    display: none;
+  }
+    
+
+ .menu-active{
+   background-color:rgb(240, 168, 52);
+   width:400px;
+   height: 605px;
+   margin-top: 75px;
+   position: fixed;
+   
+  
+}
+
+
+.itens-moble{ 
+  
+    list-style: none;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: -10px;
+    text-align: center;
+    font-size: 20px;
+    color:white
+    
+
+    
+}
+
+.itens-moble:hover{
+    color: blue;
+    transition: 1s;
+}
+
+
+
+
+/*aqui termina a barra de navegação*/
+
+/*Aqui é o area dos produtos */
 .box_product{
     display: flex;
     
@@ -54,6 +109,18 @@ h2{
 }
 
 
+
+
+
+/*fim da area de produtos*/
+
+
+
+
+
+
+
+/*aqui começa o footer*/
 footer{
     display: flex;
     position: fixed;
