@@ -4,6 +4,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
+    cursor: pointer;
 }
 
 body{
@@ -45,19 +46,21 @@ h2{
     margin-left: 70px;
     font-size: 15px;
 }
+.avatar{
+display: none;
+ }
 
+ 
 
 /*Aqui termina o cabeçalho*/
 
-
-
-
-   
- 
   .menu{
     display: none;
   }
-    
+ .menu-nav{
+    display: none;
+ }
+ 
   header{
     
     position: fixed;
@@ -70,7 +73,7 @@ h2{
  .menu-active{
    background-color:rgb(240, 168, 52);
    width:400px;
-   height: 605px;
+   height: 670px;
    margin-top: 75px;
    position: fixed;
    
@@ -79,7 +82,6 @@ h2{
 
 
 .itens-moble{ 
-  
     list-style: none;
     padding: 10px;
     margin-top: 50px;
@@ -93,7 +95,7 @@ h2{
 }
 
 .itens-moble:hover{
-    color: blue;
+    color: purple;
     transition: 1s;
 }
 
@@ -115,7 +117,10 @@ h2{
 }
 
 a{
-    margin-left: -4px;
+    margin-left: -15px;
+}
+.icon-itens{
+    display: none;
 }
 
 /*fim da area de produtos*/
@@ -146,6 +151,26 @@ h1{
     width: 30px;
  }
 
+ .avatar{
+    display: flex;
+    position: fixed;
+    margin-left: 90%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius:100% ;
+    margin-top: 15px;
+    align-items:start;
+  
+ }
+
+ .i-avatar{
+   margin-top: -10px;
+   margin-left: -5px;
+ }
+ .Login{
+    display: none;
+ }
 
 .itens{
     display:grid;
@@ -161,7 +186,14 @@ h1{
    margin-top: 80px;
    width: 400px;
 }
-
+.link-mob{
+    margin-left: 20px;
+}
+.icon-itens{
+  display: flex;
+  margin-top: -28px;
+  margin-left: 100px;
+}
 
 
 footer{
@@ -207,13 +239,54 @@ button{
 span{
      color: white;
    }
+
+
+#menu{
+    
+    cursor: pointer;
+    animation: menu-lateral .4s ease-in;
 }
+@keyframes menu-lateral {
+    0%{
+        width: 100px;
+    }
+    25%{
+        width:200px;
+    }
+    50%{
+        width: 300px;
+    }
+    100%{
+        width: 400px;
+    }
+}
+
+#menu .link-mob{
+ animation: efeitoLetras 1s ease-in-out;
+}
+
+@keyframes efeitoLetras {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0,5;
+    }
+    100%{
+        opacity: none;
+    }
+    
+}
+}
+
+.contatos{ display: none;}
 
 
 
 
 @media(min-width:1024px){
 
+    
 .menu{   
 display: block;
 position: fixed;
@@ -223,20 +296,252 @@ background:rgb(240, 168, 52,1);
 margin-top:78px;
 
 
+
+
+}
+.menu a{
+    display: none;
 }
 
+.search{
+    width: 400px;
+    margin-top: -5px;
+    margin-left: 375px;
+}
 
+.explore{
+    width: 365px;
+}
+.menu-nav{
+    display:flex;
+    width: 350px;
+    height: 40px;
+    margin-top: 20px;
+    position: fixed;
+    margin-left: 38%;
+   
+}
+
+a{
+    padding-left: 5px;
+}
+
+.itens-nav{
+    display: inline-block;
+    list-style: none;
+    margin-top: 23px;
+    padding: 10px;
+    color:white
+}
+.itens-nav:hover{
+    cursor: pointer;
+    color: purple;
+    transition: 1s;
+}
 .itens{
     margin-left: 150px;
 }
+.menu-active{
+    width: 300px;
+}
+.menu-active .icon-itens{
+    margin-top: -30px;
+    margin-left: 60px;
+    
 }
 
+.icon-itens{
+    position: absolute;
+    margin-top:-8px;
+    width: 35px;
+    margin-left: 6px;
+}
+
+.avatar{
+    margin-left: 80%; 
+}
+
+.Login{
+    display: inline-block;
+    position: fixed;
+    width: 100px;
+    text-align: center;
+    margin-top: 5px;
+    left:86%;
+    font-size: 16px;
+}
+
+#menu{
+    
+    cursor: pointer;
+    transition: ease;
+    transition-duration: .5s;
+}
+
+#menu .link-mob{
+ animation: efeitoLetras 1s ease-in-out;
+}
+
+@keyframes efeitoLetras {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0,5;
+    }
+    100%{
+        opacity: none;
+    }
+    
+}
+
+.contatos{ display: none;}
+   } 
+
+
+
+
 @media(min-width:1220px){
+
+    header{
+        height: 90px;
+        border-bottom: 1px solid white;
+    }
+
+    h1{
+        margin-top:10px ;
+        margin-left: 15px;
+    }
+    h2{
+        margin-left: 15px;
+    }
+    .bars-menu{
+        
+        display: none;
+     
+    }
     .itens{
         display:grid;
         grid-template-columns: repeat(3,355px);
         grid-template-rows: repeat(3,150px);
-        margin-left: 150px;
+        margin-left: 125px;
+        margin-top: 60px;
         }
 
+ .search{
+    width: 500px;
+    margin-left:330px ;
+    margin-top: 5px;
+ }
+
+ .explore{
+    width: 459px;
+ }
+
+.menu{
+    
+    margin-top:91px;
+   
+    }
+
+.menu-nav{
+    display:flex;
+    width: 390px;
+    height: 40px;
+    margin-top: 45px;
+    position: fixed;
+    margin-left:30%;
+    
+}
+
+.menu-active{
+    margin-top: 91px;
+    width: 200px;
+    border-right: 1px  solid white ;
+}
+.menu-active .icon-itens{
+    
+    margin-left: 5px;
+    
+}
+ a{
+    padding-left: 15px;
+ }
+
+.itens-nav{
+    display: inline-block;
+    list-style: none;
+    margin-top: 8px;
+    padding-left: 15px;
+    color:white
+}
+
+footer{
+ 
+ position: absolute;
+ width: 1200px;
+ height:500px;
+ bottom:0 ;
+ margin-left:61px;
+ top:710px;
+ z-index: -1;
+}
+.Login{
+    left: 90%;
+}
+.avatar{
+    margin-left: 85%;
+}
+
+.contatos{
+    display: flex;
+    position: fixed;
+    left: 70%;
+    width: 100px;
+    height: 40px;
+    justify-content: space-between;
+    margin-top: -28px;
+}
+.cont:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1px;
+    box-shadow: 0px 0px 8px white;
+
+}
+}
+
+@media(min-width:1920px){
+
+    body{
+       height: 1720px;
+    }
+
+    .menu{   
+     
+        height: 1000px;
+       
+    }
+    .itens{
+        display:grid;
+        grid-template-columns: repeat(5,355px);
+        grid-template-rows: repeat(5,150px);
+        margin-left: 125px;
+        
+        }
+
+        .menu-nav{
+            margin-left:46%;
+            margin-top: 20px;
+        }
+
+
+        footer{
+          
+            width: 1860px;
+            bottom: auto;
+            margin-left:59px;
+            top:-100px;
+            z-index: -1;
+           }
 }
