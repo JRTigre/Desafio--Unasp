@@ -7,195 +7,192 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-    <script src="script.js" defer></script>
-   <script src="menu-moblie.js"defer></script>
+    <script src="script.js" defer></script> <!--Este script usei para criar o componete onde crie os cards para os produtos-->
+    <script src="menu-mobile.js"defer></script><!--Este script usei para dar um função ao botão do menu lateral-->
 </head>
+
 <body>
+    <!-- Cabeçalho da minha página-->
     <header>
         <div class="title">
-            
             <i class="bars-menu" onclick="Click()"><img src="assets/cardapio.png" alt=""></i>
-           
             <h1>Multiverso da Bíblia</h1>
             <h2>Todas as bíblias em um só lugar</h2>
         </div>
     </header>
-    <nav class="menu" id="menu">
-
-       
-       <ul>
-            <li class="itens-moble"><a class="link-mob">Bíblias</a><i><img class="icon-itens" onclick="Click()" src="assets/biblia (1).png" alt=""></i></li>
-            <li class="itens-moble" ><a class="link-mob">Novidades</a><i><img class="icon-itens" onclick="Click()"  src="assets/novo.png" alt=""></li>
-            <li class="itens-moble"><a class="link-mob">Comprar</a><i><img class="icon-itens" onclick="Click()" src="assets/carrinho-de-compras.png" alt=""></li>
-            <li class="itens-moble"><a class="link-mob">Contatos</a><i><img class="icon-itens"onclick="Click()" src="assets/contato.png"alt=""></li>
-        </ul>
+    <!-- Barra de menu cabeçalho-->
+    <nav >
+        <div class="menu-nav" >
+    <!--Menu de navegação-->
+            <ul>
+                 <li class="itens-nav" ><a class="link-nav">Bíblias</a></li>
+                 <li class="itens-nav"><a class="link-nav">Novidades</a></li>
+                 <li class="itens-nav"><a class="link-nav">Comprar</a></li>
+                 <li class="itens-nav"><a class="link-nav">Contatos</a></li>
+             </ul>
+        </div>
+    <!-- Barra de pesquisa-->
+        <div class="search">
+            <form action="#" method="post">
+                <input type="text" class="explore" id="explore" placeholder="Encontre sua bíblia" required>
+                <button type="submit">
+                <span class="material-symbols-outlined">search</span>
+            </form>
+        </div>
+    <!--Login e cadastro-->
+        <div class="avatar" >
+           <i class="i-avatar" href=""><Img src="assets/avatar.png"></Img> 
+        </div>
+        <div>
+            <a class="Login">Login </n>Casdastre-se</a></i>
+        </div>
+    <!--Botões de redes socias--> 
+        <div class="contatos">
+           <i><img class="cont" src="assets/instagram (1).png" alt=""></i>
+           <i><img class="cont"src="assets/linkedin.png" alt=""></i>
+           <i> <img class="cont"src="assets/whatsapp.png" alt=""></i>
+       </div>
+   <!-- Menu lateral - seção de recursos -->    
+       <div class="menu" id="menu"> 
+          <ul>
+             <li class="itens-mobile">
+                 <a class="link-mob">Bíblias</a>
+                 <i><img class="icon-itens" onclick="Click()" src="assets/biblia (1).png" alt=""></i>
+             </li>
+             <li class="itens-mobile">
+                 <a class="link-mob">Novidades</a>
+                 <i><img class="icon-itens" onclick="Click()"  src="assets/novo.png" alt="">
+             </li>
+             <li class="itens-mobile">
+                 <a class="link-mob">Comprar</a>
+                 <i><img class="icon-itens" onclick="Click()" src="assets/carrinho-de-compras.png" alt="">
+             </li>
+             <li class="itens-mobile">
+                 <a class="link-mob">Contatos</a>
+                 <i><img class="icon-itens"onclick="Click()" src="assets/contato.png"alt="">
+             </li>
+          </ul>
+       </div>
 
     </nav>
-    <div class="search">
-        <form action="#" method="post">
-            <input type="text" class="explore" id="explore" placeholder="Encontre sua bíblia" required>
-            <button type="submit"><span class="material-symbols-outlined">
-                search
-                </span>
-        </form>
-     </div>
-
-    <div class="menu-nav" >
-       
-        <ul>
-             <li class="itens-nav" ><a class="link-nav">Bíblias</a></li>
-             <li class="itens-nav"><a class="link-nav">Novidades</a></li>
-             <li class="itens-nav"><a class="link-nav">Comprar</a></li>
-             <li class="itens-nav"><a class="link-nav">Contatos</a></li>
-         </ul>
-    </div>
-
-    <div class="avatar" >
-     <i class="i-avatar" href=""><Img src="assets/avatar.png"></Img> 
-    </div>
-    <div><a class="Login">Login </n>Casdastre-se</a></i></div>
-   <div class="contatos">
-    <i><img class="cont" src="assets/instagram (1).png" alt=""></i>
-    <i><img class="cont"src="assets/linkedin.png" alt=""></i>
-    <i> <img class="cont"src="assets/whatsapp.png" alt=""></i>
-   </div>
-
+    <!--Seção de Produtos-->
     <main class="box_product">
       
-            <div class="itens">
-               
-                <my-card  
-                photos="assets/biblia turma do cristanzinho.png"
-                title="Bíblia Turma do Cristanzinho"
-                perfil="Biblia ilustrada, totalmente colorida."
-                price= "R$ 89,90"
-                > </my-card>    
-                <my-card  
-                    photos="assets/Biblia _leão.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/Biblia_acao_estudo.png"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>                   
-                    <my-card  
-                    photos="assets/biblia_3_palavrinhas_mini.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/biblia_de_estudo_plenitude_para_jovens.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/Biblia_Essencial.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/Biblia-Comics---capa-vermelha.png"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>                   
-                    <my-card  
-                    photos="assets/biblia_flores.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/Bib-Infantil_Me-ensina-a-palavra_mockup.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/biblia_de_estudo_nvi_live_tone.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/biblia_de_estudo_nvi_live_tone.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/biblia_de_estudo_nvi_live_tone.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/biblia_de_estudo_nvi_live_tone.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/biblia_de_estudo_nvi_live_tone.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/biblia_de_estudo_nvi_live_tone.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/biblia_de_estudo_nvi_live_tone.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/biblia_de_estudo_nvi_live_tone.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/biblia_de_estudo_nvi_live_tone.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>
-                    <my-card  
-                    photos="assets/biblia_de_estudo_nvi_live_tone.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card><my-card  
-                    photos="assets/biblia_de_estudo_nvi_live_tone.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card><my-card  
-                    photos="assets/biblia_de_estudo_nvi_live_tone.webp"
-                    title="Bíblia Turma do Cristanzinho"
-                    perfil="Biblia ilustrada, totalmente colorida."
-                    price= "R$ 89,90"
-                    > </my-card>   
-                </div>
-                
-            </div>
-            
-            
+      <div class="itens">
+    <!--Criei esta tag toda sua estrura esta no shadow DOM do Html e sua estrutura e estilização estão componetizado
+    no documento JavaScript con o titulo "script.js"-->           
+         <my-card  
+         photos="assets/biblia turma do cristanzinho.png"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90" >
+         </my-card>    
+         <my-card  
+         photos="assets/Biblia _leão.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>
+         <my-card  
+         photos="assets/Biblia_acao_estudo.png"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>                   
+         <my-card  
+         photos="assets/biblia_3_palavrinhas_mini.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>
+         <my-card  
+         photos="assets/biblia_de_estudo_plenitude_para_jovens.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90" > 
+         </my-card>           
+         <my-card  
+         photos="assets/Biblia_Essencial.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>          
+         <my-card  
+         photos="assets/Biblia-Comics---capa-vermelha.png"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90">
+         </my-card>     
+         <my-card  
+         photos="assets/biblia_flores.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>
+         <my-card  
+         photos="assets/Bib-Infantil_Me-ensina-a-palavra_mockup.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>
+         <my-card  
+         photos="assets/biblia_de_estudo_nvi_live_tone.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>
+         <my-card  
+         photos="assets/biblia_de_estudo_nvi_live_tone.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>
+         <my-card  
+         photos="assets/biblia_de_estudo_nvi_live_tone.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>
+         <my-card  
+         photos="assets/biblia_de_estudo_nvi_live_tone.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>
+         <my-card  
+         photos="assets/biblia_de_estudo_nvi_live_tone.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>
+         <my-card  
+         photos="assets/biblia_de_estudo_nvi_live_tone.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90">
+         </my-card>
+         <my-card  
+         photos="assets/biblia_de_estudo_nvi_live_tone.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>
+         <my-card  
+         photos="assets/biblia_de_estudo_nvi_live_tone.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>
+         <my-card  
+         photos="assets/biblia_de_estudo_nvi_live_tone.webp"
+         title="Bíblia Turma do Cristanzinho"
+         perfil="Biblia ilustrada, totalmente colorida."
+         price= "R$ 89,90"> 
+         </my-card>
+                                  
         </div>
     </main>
-
+ 
     <footer>
         <div>
             <h1> Desafio: Front-End</h1>

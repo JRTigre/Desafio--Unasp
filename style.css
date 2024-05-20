@@ -11,12 +11,11 @@ body{
     height: 1650px;
     
 }
-
-/* começa o cabeçalho*/
+/*Este stilização esta feita para mobile */
+/* Estilização do cabeçalho*/
 header{
-    
-    position: fixed;
     display: flex;
+    position: fixed;
     width: 100%;
     height: 75px;
     background:rgba(254,182,69,1) ;
@@ -30,75 +29,60 @@ header{
 }
 
 i img{
-    width: 25px;
     position: absolute;
+    width: 25px;
     margin-top: 20px;
     margin-left: 15px;
 }
 h1{
     margin-top:8px;
-    margin-left: 70px;
-    font-size: 25px;
+    margin-left:70px;
+    font-size:25px;
 
 }
 h2{
    
-    margin-left: 70px;
-    font-size: 15px;
+    margin-left:70px;
+    font-size:15px;
 }
-.avatar{
-display: none;
- }
 
  
 
 /*Aqui termina o cabeçalho*/
 
-  .menu{
-    display: none;
-  }
- .menu-nav{
-    display: none;
- }
- 
-  header{
-    
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 80px;
-    background:rgba(254,182,69,1) ;
-}
+/*Barra de menu*/
 
  .menu-active{
-   background-color:rgb(240, 168, 52);
-   width:400px;
-   height: 670px;
-   margin-top: 75px;
    position: fixed;
-   
+   width:400px;
+   height: 605px;
+   margin-top: 30px;
+   background-color:rgb(240, 168, 52);
   
 }
 
 
-.itens-moble{ 
+.itens-mobile{ 
     list-style: none;
     padding: 10px;
     margin-top: 50px;
     margin-left: -10px;
     text-align: center;
     font-size: 20px;
-    color:white
+    color:white;
     
 
     
 }
 
-.itens-moble:hover{
+
+.itens-mobile:hover{
     color: purple;
-    transition: 1s;
 }
 
+a{
+    margin-left: -15px;
+}
 
 
 /*Aqui é o area dos produtos */
@@ -109,19 +93,14 @@ display: none;
 
 
 .itens{
-    display: inline-block;
+    display:inline-block;
     width: 335px;
     height: 145px;
-    margin-top:85px ;
+    margin-top:35px ;
    
 }
 
-a{
-    margin-left: -15px;
-}
-.icon-itens{
-    display: none;
-}
+
 
 /*fim da area de produtos*/
 
@@ -132,15 +111,24 @@ footer{
     height: 75px;
     background:rgba(254,182,69,1);
     margin-top: 450px;
+    bottom: 0;
+           
 }
 
+  
+/*aqui termina o footer*/
+
+.avatar ,.menu ,.menu-nav,.icon-itens, .Login, .contatos {
+    display: none;
+     }
+
+/*resposividade para tablet*/
 @media(min-width:768px){
- 
-h1{
-        
-        font-size: 30px;
-    
-    }
+/* Aqui alguns ajustes no capeçalho*/
+h1{ 
+     font-size: 30px;
+     margin-top: 15px;
+  }
 
  h2{
     font-size: 18px;
@@ -148,30 +136,28 @@ h1{
  }
 
  i img{
-    width: 30px;
+    width: 40px;
  }
-
+/*introdução do icone para o login*/
  .avatar{
     display: flex;
     position: fixed;
     margin-left: 90%;
-    width: 50px;
-    height: 50px;
-    border: 2px solid white;
+    width: 55px;
+    height: 55px;
+    border: 2px solid rgb(255, 255,255);
     border-radius:100% ;
-    margin-top: 15px;
+    margin-top: 10px;
     align-items:start;
   
  }
 
  .i-avatar{
-   margin-top: -10px;
-   margin-left: -5px;
+   margin-top: -15px;
+   margin-left: -8px;
+   
  }
- .Login{
-    display: none;
- }
-
+ /*Ultilização do grid para organização do items de produtos*/
 .itens{
     display:grid;
     grid-template-columns: repeat(2,355px);
@@ -180,14 +166,14 @@ h1{
     }
     
    
-
+/* menu de navegação*/
 .menu-active{
-   height: 1000px;
-   margin-top: 80px;
-   width: 400px;
+   height: 900px;
+   margin-top: 40px;
+   width: 350px;
 }
 .link-mob{
-    margin-left: 20px;
+    margin-left: 55px;
 }
 .icon-itens{
   display: flex;
@@ -195,13 +181,6 @@ h1{
   margin-left: 100px;
 }
 
-
-footer{
- 
- bottom: 0;
-    
-    
-}
 
 .search{
     position: fixed;
@@ -240,7 +219,7 @@ span{
      color: white;
    }
 
-
+/* animação do menu ao clicar no botão*/
 #menu{
     
     cursor: pointer;
@@ -277,32 +256,27 @@ span{
     }
     
 }
+
+
 }
-
-.contatos{ display: none;}
-
-
-
+/*resposividade para tablet em posição horizontal*/
 
 @media(min-width:1024px){
-
-    
+/*menu lateral fixo*/
 .menu{   
 display: block;
 position: fixed;
 width: 60px;
-height: 700px;
+height: 630px;
 background:rgb(240, 168, 52,1);
-margin-top:78px;
-
-
-
+margin-top:43px;
 
 }
 .menu a{
     display: none;
 }
 
+/*barra de navegação*/
 .search{
     width: 400px;
     margin-top: -5px;
@@ -312,6 +286,7 @@ margin-top:78px;
 .explore{
     width: 365px;
 }
+
 .menu-nav{
     display:flex;
     width: 350px;
@@ -334,13 +309,29 @@ a{
     color:white
 }
 .itens-nav:hover{
-    cursor: pointer;
+   
     color: purple;
-    transition: 1s;
+    
 }
 .itens{
     margin-left: 150px;
 }
+
+.avatar{
+    margin-left: 80%; 
+}
+
+.Login{
+    display: inline-block;
+    position: fixed;
+    width: 100px;
+    text-align: center;
+    margin-top: 5px;
+    left:88%;
+    font-size: 16px;
+}
+
+/*menu lateral ao apertar no botão*/
 .menu-active{
     width: 300px;
 }
@@ -355,20 +346,6 @@ a{
     margin-top:-8px;
     width: 35px;
     margin-left: 6px;
-}
-
-.avatar{
-    margin-left: 80%; 
-}
-
-.Login{
-    display: inline-block;
-    position: fixed;
-    width: 100px;
-    text-align: center;
-    margin-top: 5px;
-    left:86%;
-    font-size: 16px;
 }
 
 #menu{
@@ -395,52 +372,51 @@ a{
     
 }
 
-.contatos{ display: none;}
-   } 
-
-
-
+}
+/*resposividade para leptops*/
 
 @media(min-width:1220px){
 
-    header{
+header{
+        
         height: 90px;
         border-bottom: 1px solid white;
     }
-
-    h1{
+ 
+ h1{
         margin-top:10px ;
         margin-left: 15px;
     }
-    h2{
+ h2{
         margin-left: 15px;
     }
-    .bars-menu{
+.bars-menu{
         
         display: none;
      
     }
-    .itens{
+.itens{
         display:grid;
         grid-template-columns: repeat(3,355px);
         grid-template-rows: repeat(3,150px);
-        margin-left: 125px;
+        margin-left: 100px;
         margin-top: 60px;
         }
 
- .search{
+.search{
     width: 500px;
     margin-left:330px ;
     margin-top: 5px;
  }
 
- .explore{
+.explore{
     width: 459px;
  }
 
 .menu{
     
-    margin-top:91px;
+    margin-top:56px;
+    height: 900px;
    
     }
 
@@ -455,7 +431,7 @@ a{
 }
 
 .menu-active{
-    margin-top: 91px;
+    margin-top: 55px;
     width: 200px;
     border-right: 1px  solid white ;
 }
@@ -477,26 +453,26 @@ a{
 }
 
 footer{
- 
  position: absolute;
- width: 1200px;
- height:500px;
- bottom:0 ;
+ width: 1158px;
+ height:700px;
  margin-left:61px;
- top:710px;
+ top:550px;
  z-index: -1;
 }
 .Login{
-    left: 90%;
+ left: 87%;
+ margin-top: 18px;
 }
 .avatar{
-    margin-left: 85%;
+ margin-top: 18px;
+ margin-left: 82%;
 }
 
 .contatos{
     display: flex;
     position: fixed;
-    left: 70%;
+    left: 68%;
     width: 100px;
     height: 40px;
     justify-content: space-between;
@@ -538,8 +514,7 @@ footer{
 
         footer{
           
-            width: 1860px;
-            bottom: auto;
+            width: 2000px;
             margin-left:59px;
             top:-100px;
             z-index: -1;
