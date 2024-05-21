@@ -8,7 +8,9 @@
 }
 
 body{
-    height: 1650px;
+    height: 2830px;
+    overflow-x: hidden;
+    background:  rgb(2,0,36);
     
 }
 /*Este stilização esta feita para mobile */
@@ -18,7 +20,8 @@ header{
     position: fixed;
     width: 100%;
     height: 75px;
-    background:rgba(254,182,69,1) ;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 .title{
 
@@ -38,12 +41,16 @@ h1{
     margin-top:8px;
     margin-left:70px;
     font-size:25px;
+    color: #ffff;
+    text-shadow: 0px 0px 7px white;
 
 }
 h2{
    
     margin-left:70px;
     font-size:15px;
+    color: #ffff;
+    text-shadow: 0px 0px 7px white;
 }
 
  
@@ -55,11 +62,16 @@ h2{
  .menu-active{
    position: fixed;
    width:400px;
-   height: 605px;
-   margin-top: 30px;
-   background-color:rgb(240, 168, 52);
-  
+   height: 593px;
+   margin-top: 40px;
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,1) 35%, rgba(0,212,255,1) 100%);
+   border-top: 1px solid #fff;
+   border-bottom:  1px solid #fff;
 }
+
+  
+
 
 
 .itens-mobile{ 
@@ -77,7 +89,7 @@ h2{
 
 
 .itens-mobile:hover{
-    color: purple;
+    text-shadow: 0px 0px 8px white;
 }
 
 a{
@@ -94,9 +106,8 @@ a{
 
 .itens{
     display:inline-block;
-    width: 335px;
-    height: 145px;
-    margin-top:35px ;
+    margin-top:45px ;
+    margin-left: 3px;
    
 }
 
@@ -106,13 +117,16 @@ a{
 
 /*aqui começa o footer*/
 footer{
+    display: flex;
     position: fixed;
     width: 100%;
     height: 75px;
-    background:rgba(254,182,69,1);
     margin-top: 450px;
     bottom: 0;
-           
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,1) 35%, rgba(0,212,255,1) 100%);
+   
+
 }
 
   
@@ -122,8 +136,12 @@ footer{
     display: none;
      }
 
+
+
+
 /*resposividade para tablet*/
 @media(min-width:768px){
+
 /* Aqui alguns ajustes no capeçalho*/
 h1{ 
      font-size: 30px;
@@ -158,6 +176,7 @@ h1{
    
  }
  /*Ultilização do grid para organização do items de produtos*/
+
 .itens{
     display:grid;
     grid-template-columns: repeat(2,355px);
@@ -268,7 +287,9 @@ display: block;
 position: fixed;
 width: 60px;
 height: 630px;
-background:rgb(240, 168, 52,1);
+background: rgba(9,51,121,.2);
+/*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,1) 35%, rgba(0,212,255,1) 100%);*/
+
 margin-top:43px;
 
 }
@@ -310,7 +331,7 @@ a{
 }
 .itens-nav:hover{
    
-    color: purple;
+    text-shadow: 0px 0px 8px white;
     
 }
 .itens{
@@ -346,6 +367,7 @@ a{
     margin-top:-8px;
     width: 35px;
     margin-left: 6px;
+   
 }
 
 #menu{
@@ -454,7 +476,7 @@ header{
 
 footer{
  position: absolute;
- width: 1158px;
+ width: 1300x;
  height:700px;
  margin-left:61px;
  top:550px;
