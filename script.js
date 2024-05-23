@@ -58,7 +58,7 @@ class myCard extends HTMLElement {
           img{
             display: flex;
             width: 130px;
-            height: 133px;
+            height: 130px;
             margin-top:6px;
             border-radius: 10px 0px 0px 10px;
             box-shadow: 0px 0px 8px white;
@@ -67,7 +67,7 @@ class myCard extends HTMLElement {
           .Card_product{
             display: flex;
             width: 340px;
-            height: 150px;
+            height: 160px;
             border-radius: 11px;
             margin-left:7px;
             
@@ -78,11 +78,11 @@ class myCard extends HTMLElement {
            display: inline-block;
            width: 340px;
            height: 130px;
-           text-align: center;
-           background: linear-gradient(90deg, rgba(2,0,36,1) 0%,  rgba(0,212,255,1) 100%);
+           /*text-align: center;*/
+           background: linear-gradient(10deg,rgba(0,212,255,1) 0%,rgba(2,0,36,1)  100%);
            box-shadow: 0px 0px 8px white;
            border-radius: 0px 10px 10px 0px;
-           margin-top:8px;
+           margin-top:6px;
           }
         .name{
           font-size: 18px;
@@ -97,7 +97,8 @@ class myCard extends HTMLElement {
         
         
         .write{
-          top:-10px;
+          margin-top:1px;
+          margin-left:5px;
           color:white;
           text-shadow: 0px 0px 6px black;
       
@@ -109,9 +110,9 @@ class myCard extends HTMLElement {
         .price{
 
           margin-top:-5px;
-          color:#008000;
-          font-weight: bold;
-          text-shadow: 0px 0px 5px black;
+          margin-left:5px;
+          color:#000;
+          
           font-size:20px;
         
         }

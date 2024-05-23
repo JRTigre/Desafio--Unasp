@@ -16,7 +16,7 @@ body{
 /*Este stilização esta feita para mobile */
 /* Estilização do cabeçalho*/
 header{
-    display: flex;
+    display: flexbox;
     position: fixed;
     width: 100%;
     height: 75px;
@@ -53,7 +53,9 @@ h2{
     text-shadow: 0px 0px 7px white;
 }
 
- 
+.bars-menu img{
+    width: 30px;
+}
 
 /*Aqui termina o cabeçalho*/
 
@@ -69,10 +71,6 @@ h2{
    border-top: 1px solid #fff;
    border-bottom:  1px solid #fff;
 }
-
-  
-
-
 
 .itens-mobile{ 
     list-style: none;
@@ -129,20 +127,34 @@ footer{
 
 }
 
+
+.card-footer h2{
+    display: inline-block;
+    margin-top: 25px;
+    width: 100%;
+    margin-left: 30px;
+}
   
+
 /*aqui termina o footer*/
 
-.avatar ,.menu ,.menu-nav,.icon-itens, .Login, .contatos {
+.avatar ,.menu ,.menu-nav,.icon-itens, .Login, .contatos,.card-footer h1, h3, .contato-footer {
     display: none;
      }
 
-
+    
 
 
 /*resposividade para tablet*/
 @media(min-width:768px){
 
 /* Aqui alguns ajustes no capeçalho*/
+body{
+    height:1590px;
+}
+header{
+    height: 90px;
+}
 h1{ 
      font-size: 30px;
      margin-top: 15px;
@@ -156,6 +168,13 @@ h1{
  i img{
     width: 40px;
  }
+
+ .bars-menu img{
+    width: 40px;
+    margin-top: 8px;
+    
+}
+
 /*introdução do icone para o login*/
  .avatar{
     display: flex;
@@ -165,16 +184,24 @@ h1{
     height: 55px;
     border: 2px solid rgb(255, 255,255);
     border-radius:100% ;
-    margin-top: 10px;
+    margin-top: 15px;
     align-items:start;
   
  }
 
  .i-avatar{
+  
    margin-top: -15px;
    margin-left: -8px;
    
  }
+
+ .icon-itens{
+    display: flex;
+    margin-top: -28px;
+    margin-left: 100px;
+    
+  }
  /*Ultilização do grid para organização do items de produtos*/
 
 .itens{
@@ -182,30 +209,28 @@ h1{
     grid-template-columns: repeat(2,355px);
     grid-template-rows: repeat(2,150px);
     margin-left: 40px;
+    margin-top: 60px;
     }
     
    
 /* menu de navegação*/
 .menu-active{
-   height: 900px;
-   margin-top: 40px;
+   height: 862px;
+   margin-top: 50px;
    width: 350px;
+   margin: none;
 }
 .link-mob{
     margin-left: 55px;
 }
-.icon-itens{
-  display: flex;
-  margin-top: -28px;
-  margin-left: 100px;
-}
+
 
 
 .search{
     position: fixed;
     width: 300px;
     height: 30px;
-    top: 20px;
+    top: 23px;
     margin-left: 350px;
     border: 1px solid whitesmoke;
     padding: 1px;
@@ -275,7 +300,9 @@ span{
     }
     
 }
-
+.card-footer h2{
+  margin-left: 60%;  
+}
 
 }
 /*resposividade para tablet em posição horizontal*/
@@ -314,7 +341,7 @@ margin-top:43px;
     height: 40px;
     margin-top: 20px;
     position: fixed;
-    margin-left: 38%;
+    margin-left: 41%;
    
 }
 
@@ -335,7 +362,7 @@ a{
     
 }
 .itens{
-    margin-left: 150px;
+    margin-left: 170px;
 }
 
 .avatar{
@@ -393,11 +420,16 @@ a{
     }
     
 }
+/*fooder*/
+.card-footer h2{
+    margin-left: 90%;  
+  }
 
 }
 /*resposividade para leptops*/
 
 @media(min-width:1220px){
+/*cabeçalho*/
 
 header{
         
@@ -407,10 +439,10 @@ header{
  
  h1{
         margin-top:10px ;
-        margin-left: 15px;
+        margin-left: 25px;
     }
  h2{
-        margin-left: 15px;
+        margin-left: 25px;
     }
 .bars-menu{
         
@@ -421,20 +453,21 @@ header{
         display:grid;
         grid-template-columns: repeat(3,355px);
         grid-template-rows: repeat(3,150px);
-        margin-left: 100px;
+        margin-left: 155px;
         margin-top: 60px;
         }
 
 .search{
     width: 500px;
-    margin-left:330px ;
+    margin-left:28% ;
     margin-top: 5px;
  }
 
 .explore{
-    width: 459px;
+    width: 462px;
+    
  }
-
+/* menu de navegação cabeçalho*/
 .menu{
     
     margin-top:56px;
@@ -446,24 +479,49 @@ header{
     display:flex;
     width: 390px;
     height: 40px;
-    margin-top: 45px;
+    margin-top: 50px;
     position: fixed;
     margin-left:30%;
     
 }
-
+.Login{
+    left: 89%;
+    margin-top: 18px;
+   }
+.avatar{
+    margin-top: 18px;
+    margin-left: 83%;
+   }
+   
+.contatos{
+       display: flex;
+       position: fixed;
+       left: 68%;
+       width: 100px;
+       height: 40px;
+       justify-content: space-between;
+       margin-top: -28px;
+   }
+.cont:hover{
+       cursor: pointer;
+       border-radius: 5px;
+       padding: 1px;
+       box-shadow: 0px 0px 8px white;
+   
+   }
+/*menu lateral seção de recursos*/
 .menu-active{
-    margin-top: 55px;
-    width: 200px;
+    margin-top: 50px;
+    width: 230px;
     border-right: 1px  solid white ;
 }
 .menu-active .icon-itens{
     
-    margin-left: 5px;
+    margin-left: 30px;
     
 }
  a{
-    padding-left: 15px;
+    padding-left: 8px;
  }
 
 .itens-nav{
@@ -473,54 +531,81 @@ header{
     padding-left: 15px;
     color:white
 }
-
+/*footer*/
 footer{
  position: absolute;
  width: 1300x;
  height:700px;
  margin-left:61px;
- top:550px;
+ top:600px;
  z-index: -1;
 }
-.Login{
- left: 87%;
- margin-top: 18px;
+.card-footer h2{
+    margin-left: 5px;
 }
-.avatar{
- margin-top: 18px;
- margin-left: 82%;
-}
-
-.contatos{
+.card-footer h1,h3{
     display: flex;
-    position: fixed;
-    left: 68%;
-    width: 100px;
-    height: 40px;
-    justify-content: space-between;
-    margin-top: -28px;
+    
+   
+    
 }
-.cont:hover{
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 1px;
-    box-shadow: 0px 0px 8px white;
 
+.card-footer {
+    
+    width: 900px;
+    height: 300px;
+    margin-top: 300px;
+    margin-left: 10%;
+    border: 1px solid white;
+    
 }
+.iten-footer{
+    display: block;
+    margin-left: 30%;
+    align-items: center;
+    color:white;
+    text-shadow: 0px 0px 8px white;
+    padding: 5px;
+    
+}
+.contato-footer{
+    display: flex;
+    width: 500px;
+}
+ .contato-footer a{
+   display: inline-block;
+   padding: 45px;
+   width: 50px;
+   height: 50px;
+
+   margin-left: 100px;
+   
+    
+ }
+
+ .iten-1, .iten-2{
+ width: 60px;
+ align-items: center;
+ }
+
+.iten-1{
+    margin-top:8px;
+}
+
 }
 
 @media(min-width:1920px){
 
-    body{
+ body{
        height: 1720px;
     }
 
-    .menu{   
+ .menu{   
      
         height: 1000px;
        
     }
-    .itens{
+.itens{
         display:grid;
         grid-template-columns: repeat(5,355px);
         grid-template-rows: repeat(5,150px);
@@ -528,13 +613,12 @@ footer{
         
         }
 
-        .menu-nav{
+ .menu-nav{
             margin-left:46%;
             margin-top: 20px;
         }
 
-
-        footer{
+ footer{
           
             width: 2000px;
             margin-left:59px;
